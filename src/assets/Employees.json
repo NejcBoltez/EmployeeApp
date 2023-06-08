@@ -1,0 +1,41 @@
+[{
+        "id": 1,
+        "firstName": "Janez",
+        "lastName": "Novak",
+        "yearOfBirth": 1,
+        "vacationDays": 1,
+        "employeeImg": ""
+    },
+    {
+        "id": 1,
+        "firstName": "Nejc",
+        "lastName": "fds",
+        "yearOfBirth": 1,
+        "vacationDays": 1,
+        "employeeImg": ""
+    },
+    {
+        "id": 1,
+        "firstName": "Žiga",
+        "lastName": "gertr",
+        "yearOfBirth": 1,
+        "vacationDays": 1,
+        "employeeImg": ""
+    },
+    {
+        "id": 1,
+        "firstName": "Peter",
+        "lastName": "xcvyv",
+        "yearOfBirth": 1,
+        "vacationDays": 1,
+        "employeeImg": ""
+    },
+    {
+        "id": 1,
+        "firstName": "Peter",
+        "lastName": "xcvyv",
+        "yearOfBirth": 1,
+        "vacationDays": 1,
+        "employeeImg": ""
+    }
+]

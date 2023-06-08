@@ -1,0 +1,16 @@
+<div class="AddNew">
+    <form (ngSubmit)="onSubmit()">
+        <h1>CREATE NEW TEAM</h1>
+        <mat-form-field>
+            <mat-label>ID: </mat-label>
+            <input matInput required type="email" value="" [formControl]="id">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Name: </mat-label>
+            <input matInput required type="password" value="" [formControl]="name">
+        </mat-form-field>
+        <br>
+        <input type="submit">
+    </form>
+</div>

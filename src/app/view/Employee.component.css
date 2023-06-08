@@ -1,0 +1,69 @@
+table {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
+
+th {
+    border: 1px solid black;
+}
+
+tr {
+    border: 1px solid black;
+}
+
+.showItem {
+    width: 100%;
+    background-color: #FFFFF7;
+}
+
+.addNew {
+    background-color: aqua;
+    width: 100vh;
+    text-align: right;
+}
+
+mat-card {
+    display: inline-block;
+    background-color: rgb(148, 198, 244);
+    border: 5px solid black;
+    border-radius: 40px;
+    align-items: center;
+}
+
+.singleItem {
+    display: inline-block;
+    width: 200px;
+    margin: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.propColumn {
+    padding: 0px;
+    margin: 0px;
+    background-color: aquamarine;
+}
+
+.propForm {
+    text-align: center;
+}
+
+.userProp {
+    margin-left: 20%;
+    text-align: center;
+}
+
+.loginForm {
+    text-align: center;
+}
+
+.AddNew {
+    text-align: center;
+}
+
+input readonly {
+    background-color: silver;
+}

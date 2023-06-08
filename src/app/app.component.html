@@ -1,0 +1,25 @@
+<header>
+    <div class="headerTop">
+        <div class="headerLeft">EMPLOYEE APP</div>
+        <div class="headerRight">
+            <!--<a href="/login">LOGIN    </a>-->
+            <button (click)="logout()">LOGOUT</button>
+        </div>
+    </div>
+    <div class="headerBottom" *ngIf="isLoggedIn">
+        <div class="actionsLeft">
+            <a href="/employees">employees  |   </a>
+            <a href="/teams">teams  |   </a>
+            <a href="/userProp">User Properties</a>
+        </div>
+        <div class="actionsRight">
+            <a href="/newEmployee">newEmployee  |   </a>
+            <a href="/addTeam">addTeam</a>
+        </div>
+    </div>
+
+
+</header>
+<div>
+    <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,47 @@
+<form id="editEmployee" (ngSubmit)="onSubmit()">
+    <table>
+        <td>
+            <img src="{{employee.employeeImg}}" alt="" width="200" height="150">
+        </td>
+        <td class="propColumn">
+            <mat-form-field>
+                <mat-label>NAME: </mat-label>
+                <input readonly matInput required type="text" value="{{employee.firstName}}">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <mat-label>LAST NAME: </mat-label>
+                <input matInput readonly required type="text" value="{{employee.lastName}}" />
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <mat-label>E-MAIL: </mat-label>
+                <input matInput readonly required type="email" value="{{this.currentUser}}">
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <mat-label>yearOfBirth: </mat-label>
+                <input matInput readonly required type="number" value="{{employee.yearOfBirth}}" />
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <mat-label> select team</mat-label>
+                <input matInput readonly required value="{{team}}" />
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <mat-label> select position</mat-label>
+                <input matInput readonly required value="{{position}}" />
+            </mat-form-field>
+        </td>
+    </table>
+    <button (click)="onSubmit()">submit</button>
+    <button (click)="userAddVacation()">Add Vacation</button>
+    <tr *ngIf="addVacation">
+        <td><label>Vacation Start: </label>
+            <input required type="date" [formControl]="VacationStart"><br></td>
+        <td><label>Vacation End:: </label>
+            <input required type="date" [formControl]="VacationEnd"></td>
+        <button (click)="setVacation()">Apply for vacation</button>
+    </tr>
+</form>

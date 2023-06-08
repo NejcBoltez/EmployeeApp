@@ -1,0 +1,50 @@
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: aquamarine;
+}
+
+.headerLeft {
+    margin-left: 10px;
+    width: 45vh;
+    float: left;
+    font-size: 20px;
+}
+
+.headerRight {
+    margin-right: 10px;
+    width: 45vh;
+    float: right;
+    text-align: right;
+    font-size: 20px;
+}
+
+.headerTop {
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    margin-top: 1vh;
+}
+
+.headerBottom {
+    position: absolute;
+    width: 100%;
+    margin-top: 7vh;
+    height: 5vh;
+}
+
+.router-outlet {
+    position: absolute;
+}
+
+.actionsLeft {
+    background-color: aliceblue;
+    max-width: 40vh;
+    float: left;
+}
+
+.actionsRight {
+    background-color: aliceblue;
+    max-width: 40vh;
+    float: right;
+}

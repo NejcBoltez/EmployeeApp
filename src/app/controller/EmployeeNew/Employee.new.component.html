@@ -1,0 +1,43 @@
+<form class="AddNew" (ngSubmit)="onSubmit()">
+    <h1>CREATE NEW EMPLOYEE</h1>
+    <mat-form-field>
+        <mat-label>E-MAIL: </mat-label>
+        <input matInput required type="email" value="" [formControl]="email">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <mat-label>PASSWORD: </mat-label>
+        <input matInput required type="password" value="" [formControl]="password">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <mat-label>NAME: </mat-label>
+        <input matInput required type="text" value="" [formControl]="firstName">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <mat-label>LAST NAME: </mat-label>
+        <input matInput required type="text" value="" [formControl]="lastName">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <mat-label>yearOfBirth: </mat-label>
+        <input matInput required type="number" value="" [formControl]="yearOfBirth">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <mat-label> select team</mat-label>
+        <mat-select [formControl]="team">
+            <mat-option *ngFor="let team of teams" value="{{team.id}}">{{team.Name}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <mat-label> select position</mat-label>
+        <mat-select [formControl]="position">
+            <mat-option *ngFor="let position of positions" value="{{position.id}}">{{position.Name}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <br>
+    <button (click)="onSubmit()">submit</button>
+</form>

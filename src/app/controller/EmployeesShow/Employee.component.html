@@ -1,0 +1,32 @@
+<div>
+    <div class="showItem">
+        <div class="singleItem" *ngFor="let employee of employees">
+            <mat-card class="normal-card">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>{{employee.firstName}}</mat-card-title>
+                    <mat-card-subtitle>{{employee.lastName}}</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-lg-image [src]="employee.employeeImg" alt="Photo">
+            </mat-card>
+        </div>
+    </div>
+    <table>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Year Of Birth</th>
+        <th>vacationDays</th>
+        <th>isOnVacation</th>
+        <th>isWorking</th>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.id}}</td>
+            <td>{{employee.firstName}}</td>
+            <td>{{employee.lastName}}</td>
+            <td>{{employee.yearOfBirth}}</td>
+            <td>{{employee.vacationDays}}</td>
+            <td><input type="checkbox" [checked]="employee.isOnVacation" (click)="setVacation(employee)"></td>
+            <td><input type="checkbox" [checked]="employee.isWorking" (click)="setWorking(employee)"></td>
+        </tr>
+    </table>
+</div>
