@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { EmployeeComponent } from './controller/EmployeesShow/Employee.component';
-import { EmployeeEditComponent } from './controller/EmployeeEdit/Employee.edit.component';
 import { LoginComponent } from './controller/Login/Login.component';
 import { TeamComponent } from './controller/Team/Team.component';
 import { UserPropertiesComponent } from './controller/UserProperties/User.properties.component';
@@ -28,7 +27,6 @@ import { TeamAddComponent } from './controller/NewTeam/Team.Add.component';
   declarations: [
     AppComponent,
     EmployeeComponent,
-    EmployeeEditComponent,
     LoginComponent,
     TeamComponent,
     TeamAddComponent,
